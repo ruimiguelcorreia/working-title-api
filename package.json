@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "express": "^4.17.1"
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "justwatch-api": "^1.0.7",
+    "request": "^2.88.2"
   },
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon -r dotenv/config index.js",
     "test": "jest --runInBand"
   },
   "devDependencies": {
@@ -23,6 +26,7 @@
     "eslint-config-prettier": "^6.6.0",
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-prettier": "^3.1.1",
+    "dotenv": "^5.0.1",
     "jest": "^24.9.0",
     "nodemon": "^1.18.7",
     "prettier": "^1.19.1",
