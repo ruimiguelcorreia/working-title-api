@@ -3,9 +3,10 @@ const express = require('express');
 
 // Creating instance of express to serve endpoints.
 const app = express();
+const cors = require('cors');
 
 // Loading the body-parser helper.
-app.use(express.json());
+app.use(express.json()).use(cors());
 
 // Controllers:
 const moviesControllers = require('./controllers/movies');
